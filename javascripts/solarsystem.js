@@ -8,16 +8,27 @@ var SolarSystem = (function(){
 
 	return {
 		getPlanets: function(){return planets;} ,
+
 		getPlanetsLandedPeopleOn: function() {return numPlanetsPeopleLandedOn;} ,
+
 		setPlanetsLandedPeopleOn: function() {numPlanetsPeopleLandedOn++;},
+
 		getSpaceShip: function() {return spaceships;},
+
 		setSpaceShip: function(newSpaceShip) {spaceships.push(newSpaceShip);},
+
 		WreckSpaceShipt: function() {spaceships.pop();},
+
 		getDwarfPlanets: function(){ return "they are rejects";},
+
 		setDwarfPlanets: function(lumpOfRock){dwarfPlanets.push(lumpOfRock);},
+
 		getStars: function(){return stars },
+
 		setStars: function(newStar){stars.push(newStar);},
+
 		getSolarSystemAge: function(){return age},
+		
 		setSolarSystemAge: function(){age++;}
 
 	}
