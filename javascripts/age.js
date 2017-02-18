@@ -1,13 +1,14 @@
+
 var SolarSystem = (function(oldSolarSystem){
 	var age = 0;
 
-		oldSolarSystem.getSolarSystemAge = function() {
-			return age;
-		};
+	oldSolarSystem.getSolarSystemAge = function(){
+		return age;
+	};
 
-		oldSolarSystem.setSolarSystemAge = function()  {
-			function(){age++;};
+	oldSolarSystem.setSolarSystemAge = function(){
+		age++;
+	};
 
-		return oldSolarSystem;
-
+	return oldSolarSystem;
 })(SolarSystem || {});
